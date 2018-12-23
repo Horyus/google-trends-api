@@ -10,4 +10,5 @@ export default {
   interestOverTime: apiRequest('Interest over time'),
   relatedQueries: apiRequest('Related queries'),
   relatedTopics: apiRequest('Related topics'),
+  clearCookie: require('./request').clearCookie,
 };

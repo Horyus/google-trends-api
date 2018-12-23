@@ -5,6 +5,10 @@ import querystring from 'querystring';
 // cache of the cookie - avoid re-requesting on subsequent requests.
 let cookieVal;
 
+export function clearCookie() {
+  cookieVal = undefined;
+};
+
 // simpler request method for avoiding double-promise confusion
 function rereq(options, done) {
   let req;
